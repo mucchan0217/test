@@ -21,7 +21,8 @@ a:hover {
 }
 
 .page {
-  width: 980px;
+  width: 100%;
+  max-width: 980px;
   margin: 20px auto;
   border: 6px ridge #00ffff;
   background: #000033;
@@ -164,4 +165,27 @@ a:hover {
   border-top: 2px dashed #00ffff;
   padding-top: 10px;
   color: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .page,
+  .page tbody,
+  .page tr,
+  .page td {
+    display: block;
+    width: 100%;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 4px double #00ffff;
+  }
+
+  .main {
+    padding: 12px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
