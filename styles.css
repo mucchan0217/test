@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  background: repeating-linear-gradient(
+      45deg,
+      #ff00cc 0,
+      #ff00cc 10px,
+      #00ffff 10px,
+      #00ffff 20px
+    );
+  font-family: "MS Gothic", "MS PGothic", "Courier New", monospace;
+  color: #00ff00;
+}
+
+a {
+  color: #ffff00;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff00ff;
+}
+
+.page {
+  width: 980px;
+  margin: 20px auto;
+  border: 6px ridge #00ffff;
+  background: #000033;
+}
+
+.sidebar {
+  width: 200px;
+  vertical-align: top;
+  background: #000000;
+  border-right: 4px double #00ffff;
+  padding: 10px;
+}
+
+.logo-box {
+  text-align: center;
+  border: 3px outset #ff00cc;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  background: #000066;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px #ff00ff;
+}
+
+.logo-sub {
+  font-size: 12px;
+  color: #00ffff;
+}
+
+.nav-box {
+  border: 3px inset #00ffff;
+  padding: 8px;
+  margin-bottom: 15px;
+  background: #001144;
+}
+
+.nav-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ffcc00;
+}
+
+.nav {
+  list-style: square;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.counter {
+  border: 2px dashed #ff00ff;
+  padding: 8px;
+  text-align: center;
+  background: #110022;
+}
+
+.counter-title {
+  font-size: 12px;
+  color: #00ffff;
+  margin-bottom: 4px;
+}
+
+.digits {
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #ffff00;
+}
+
+.main {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.marquee {
+  border: 2px solid #00ffff;
+  background: #000000;
+  padding: 6px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+.hero {
+  border: 4px groove #ff00ff;
+  padding: 12px;
+  text-align: center;
+  background: radial-gradient(circle at top, #0033ff, #000011);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #00ffff;
+  text-shadow: 2px 2px #ff00ff;
+}
+
+.blink {
+  color: #ffcc00;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.content-box {
+  border: 3px outset #00ffff;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  background: #000022;
+}
+
+.content-box h2 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.thumb {
+  border: 2px solid #ff00ff;
+  padding: 10px;
+  text-align: center;
+  background: #000000;
+  color: #00ffff;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  border-top: 2px dashed #00ffff;
+  padding-top: 10px;
+  color: #ffffff;
+}
